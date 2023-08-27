@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f396510c7eef1c549b45608d897cd6b5",
+    "content-hash": "9c42a47b5bf2dbfb00636d7cd1297813",
     "packages": [
         {
             "name": "brick/math",
@@ -971,6 +971,77 @@
             "time": "2023-08-27T10:19:19+00:00"
         },
         {
+            "name": "laravel-frontend-presets/tall",
+            "version": "v6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-frontend-presets/tall.git",
+                "reference": "f218165b6047663059833e9cfd31fb89e6ba2f3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-frontend-presets/tall/zipball/f218165b6047663059833e9cfd31fb89e6ba2f3a",
+                "reference": "f218165b6047663059833e9cfd31fb89e6ba2f3a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.0",
+                "laravel/ui": "^4.2",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\Tall\\TallServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\Tall\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Harrin",
+                    "email": "Dan@DanHarrin.com"
+                },
+                {
+                    "name": "Liam Hammett",
+                    "email": "liam@liamhammett.com"
+                },
+                {
+                    "name": "Ryan Chandler",
+                    "email": "support@ryangjchandler.co.uk"
+                }
+            ],
+            "description": "TALL preset for Laravel.",
+            "keywords": [
+                "alpine",
+                "alpinejs",
+                "laravel",
+                "livewire",
+                "preset",
+                "tailwind",
+                "tailwindcss",
+                "tailwindui",
+                "tall"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-frontend-presets/tall/issues",
+                "source": "https://github.com/laravel-frontend-presets/tall"
+            },
+            "time": "2023-05-10T20:47:26+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v10.20.0",
             "source": {
@@ -1413,6 +1484,68 @@
             "time": "2023-02-15T16:40:09+00:00"
         },
         {
+            "name": "laravel/ui",
+            "version": "v4.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "a58ec468db4a340b33f3426c778784717a2c144b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/a58ec468db4a340b33f3426c778784717a2c144b",
+                "reference": "a58ec468db4a340b33f3426c778784717a2c144b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21|^10.0",
+                "illuminate/filesystem": "^9.21|^10.0",
+                "illuminate/support": "^9.21|^10.0",
+                "illuminate/validation": "^9.21|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "support": {
+                "source": "https://github.com/laravel/ui/tree/v4.2.2"
+            },
+            "time": "2023-05-09T19:47:28+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "2.4.0",
             "source": {
@@ -1803,6 +1936,79 @@
                 }
             ],
             "time": "2023-08-05T12:09:49+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "2e426e8d47e03c4777334ec0c8397341bcfa15f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/2e426e8d47e03c4777334ec0c8397341bcfa15f3",
+                "reference": "2e426e8d47e03c4777334ec0c8397341bcfa15f3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0",
+                "illuminate/support": "^10.0|^11.0",
+                "illuminate/validation": "^10.0|^11.0",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/http-kernel": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.0|^11.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^7.0|^8.0",
+                "orchestra/testbench-dusk": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-25T18:13:03+00:00"
         },
         {
             "name": "monolog/monolog",
