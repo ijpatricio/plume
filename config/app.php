@@ -186,4 +186,6 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'admin_emails_csv' => env('APP_ADMIN_EMAILS_CSV', 'test@example.com,test2@example.com')
+
 ];
