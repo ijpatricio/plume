@@ -17,6 +17,8 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Z3d0X\FilamentFabricator\FilamentFabricatorPlugin;
+use Z3d0X\FilamentFabricator\Resources\PageResource;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -24,6 +26,9 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->plugins([
+                FilamentFabricatorPlugin::make(),
+            ])
             ->id('admin')
             ->path('admin')
             ->login(\App\Filament\Pages\Auth\Login::class)
