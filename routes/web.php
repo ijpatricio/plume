@@ -13,5 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::domain('{handle}.busque.dev')->group(function () {
+    Route::get('/', \App\Http\Controllers\UserPortolioController::class);
+});
+
 //Route::view('/', 'welcome')->name('home');
 Route::redirect('/', 'admin');
+
+
