@@ -35,7 +35,7 @@ return [
 
     'page-model' => \Z3d0X\FilamentFabricator\Models\Page::class,
 
-    'page-resource' => \Z3d0X\FilamentFabricator\Resources\PageResource::class,
+    'page-resource' => \App\Filament\Resources\PageResource::class,
 
     'enable-view-page' => false,
 
