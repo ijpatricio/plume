@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('{handle}.busque.dev')->group(function () {
+if (app()->environment('local'))
+
+Route::domain(app('subdomain-hostname'))->group(function () {
     Route::get('/', \App\Http\Controllers\UserPortolioController::class);
 });
 
