@@ -1,4 +1,7 @@
-import './bootstrap';
-import Alpine from 'alpinejs'
-window.Alpine = Alpine
-Alpine.start()
+
+
+console.log('Hello world!')
+
+import HelloWorld from './components/HelloWorld'
+ HelloWorld('helloWorld', 'helloWorld2')
+

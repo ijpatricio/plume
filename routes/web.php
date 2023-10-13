@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('/demo/react', 'demo-react');
 Route::get('/pages/{id}', DemoPageController::class);
 
 Route::domain(app('subdomain-hostname'))->group(function () {
