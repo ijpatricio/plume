@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DemoPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-if (app()->environment('local'))
+Route::get('/pages/{id}', DemoPageController::class);
 
 Route::domain(app('subdomain-hostname'))->group(function () {
     Route::get('/', \App\Http\Controllers\UserPortolioController::class);
