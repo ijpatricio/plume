@@ -16,13 +16,13 @@
     </section>
 
     <section class="mt-12 container mx-auto">
-        aqui Vai chegar o nosso React component
         <div id="helloWorld"></div>
     </section>
 
-    <section class="mt-12 container mx-auto">
-        <div id="helloWorld2"></div>
-        <x-demo-cards />
+    <section class="mt-12 container mx-auto text-center">
+
+        <livewire:todo-list />
+
     </section>
 
 </body>
