@@ -1,6 +1,7 @@
 @props([
     'name' => 'Name',
     'introduction' => 'Your introduction',
+    'avatar' => 'https://github.com/danielhe4rt.png'
 ])
 
 <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
